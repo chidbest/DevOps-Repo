@@ -11,3 +11,5 @@ The following projects will be implemented:
 3. AWS LAMP STACK IMPLEMENTATION
 
 4. AWS LEMP STACK IMPLEMENTATION
+
+5. SHELL SCRIPTING
