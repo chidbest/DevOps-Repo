@@ -315,3 +315,44 @@ echo "Square root of number 2: $square_root"
 ![Alt text](Images/19.calculation.PNG)
 
 ![Alt text](Images/20.calculation.PNG)
+
+# - E. FILE BACK-UP AND TIMESTAMPING -
+
+### Step 1: Open a file using the command `touch backup.sh`
+
+### Step 2: Paste the code below into the file using `nano backup.sh`
+
+```
+
+#!/bin/bash
+
+# Define the source directory and backup directory
+source_dir="C:\Users\Chidi\Desktop\shell_testing\chidi"
+backup_dir="*/backup_directory"
+
+# Create a timestamp with the current date and time
+timestamp=$(date +"%Y%m%d%H%M%S")
+
+# Create a backup directory with the timestamp
+backup_dir_with_timestamp="$backup_dir/backup_$timestamp"
+
+# Create the backup directory
+mkdir -p "$backup_dir_with_timestamp"
+
+# Copy all files from the source directory to the backup directory
+cp -r "$source_dir"/* "$backup_dir_with_timestamp"
+
+# Display a message indicating the backup process is complete
+echo "Backup completed. Files copied to: $backup_dir_with_timestamp"
+
+```
+
+### Step 3: Run the command for executing permission `sudo chmod +x backup.sh`
+
+### Step 4: Run the script using the command `sudo ./backup.sh`
+
+![Alt text](<Images/21.file backup.PNG>)
+
+![Alt text](<Images/22.file backup.PNG>)
+
+## Project 5: Shell Scripting Hands-On Project Completed
