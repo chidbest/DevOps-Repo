@@ -66,7 +66,7 @@ By default both EC2 virtual servers are located in the same local virtual networ
 
 ![Alt text](<Images/mysql client install.PNG>)
 
-### Step 6- From MySQL-Client terminal, I connected remotely into my MySQL-Server data engine using my password and the private ip of MySQL-Server.
+### Step 5: From MySQL-Client terminal, I connected remotely into my MySQL-Server data engine using my password and the private ip of MySQL-Server.
 
 `mysql -u chidi -p -h 172.31.44.82`
 

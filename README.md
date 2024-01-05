@@ -13,3 +13,7 @@ The following projects will be implemented:
 4. AWS LEMP STACK IMPLEMENTATION
 
 5. SHELL SCRIPTING
+
+6. MYSQL Client Server Architecture
+
+7. Load Balancing with NGINX
