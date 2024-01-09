@@ -16,4 +16,6 @@ The following projects will be implemented:
 
 6. MYSQL Client Server Architecture
 
-7. Load Balancing with NGINX
+7. LOAD BALANCING WITH NGINX
+
+8. AUTOMATING LOAD BALANCER CONFIGURATION WITH SHELL SCRIPTING
