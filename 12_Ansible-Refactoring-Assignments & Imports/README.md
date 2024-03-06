@@ -147,7 +147,7 @@ Before we run we have to configure the ssh-agent as shown in the below screensho
 ```
 eval ssh-agent -s
 
-ssh-add itoro-web-server.pem
+ssh-add Jenkins-Ansible-Server.pem
 
 ssh -A user@<Server_Public_IP_Address>
 
