@@ -79,21 +79,21 @@ In the world of AWS VPC, think of subnets as individual plots in your land (VPC)
 
 Creating a public subnet is like creating a plot of land with direct road (internet) access. Here's how you do it:
 
-    * Go to the AWS VPC page.
-    * Find 'Subnets', click on it, then click 'Create subnet'.
-    * Give this new plot a name, select the big plot (VPC) you want to divide, and leave the IP settings as they are.
-    * Attach an Internet Gateway to this subnet to provide the road (internet) access.
-    * Update the route table associated with this subnet to allow traffic to flow to and from the internet.
+- Go to the AWS VPC page.
+- Find 'Subnets', click on it, then click 'Create subnet'.
+- Give this new plot a name, select the big plot (VPC) you want to divide, and leave the IP settings as they are.
+- Attach an Internet Gateway to this subnet to provide the road (internet) access.
+- Update the route table associated with this subnet to allow traffic to flow to and from the internet.
 
 ## Creating a Private Subnet
 
 Creating a private subnet is like creating a secluded plot without direct road (internet) access. Here's how you do it:
 
-    * Go to the AWS VPC page.
-    * Find 'Subnets', click on it, then click 'Create subnet'. Give this new plot a name, select the big plot (VPC) you want to divide, and
-      leave the IP settings as they are.
-    * Don't attach an Internet Gateway to this subnet, keeping it secluded.
-    * The route table for this subnet doesn't allow direct traffic to and from the internet.
+- Go to the AWS VPC page.
+- Find 'Subnets', click on it, then click 'Create subnet'. Give this new plot a name, select the big plot (VPC) you want to divide, and
+  leave the IP settings as they are.
+- Don't attach an Internet Gateway to this subnet, keeping it secluded.
+- The route table for this subnet doesn't allow direct traffic to and from the internet.
 
 ## Working with Public and Private Subnets
 
@@ -117,9 +117,9 @@ To give your public subnet access to the main road (internet), you need an Inter
 
 Technically, the subnets are still private. You'll need these to make it work as public subnets:
 
-    * An Internet Gateway (IGW) attached to the VPC
-    * Route table with default route towards the IGW
-    * Public IP assigned to the AWS resources (e.g., EC2 instances)
+- An Internet Gateway (IGW) attached to the VPC
+- Route table with default route towards the IGW
+- Public IP assigned to the AWS resources (e.g., EC2 instances)
 
 Go to VPC > Internet gateways and click "Create internet gateway", Insert a name tag and click "create internet gateway"
 
@@ -289,20 +289,20 @@ VPC Peering is a networking feature that allows you to connect two Virtual Priva
 
 ## Benefits of VPC Peering
 
-    *Simplified Network Architecture: VPC Peering simplifies network design by enabling direct communication between VPCs, eliminating
-     the need for complex networking configurations.
+- **Simplified Network Architecture:** VPC Peering simplifies network design by enabling direct communication between VPCs, eliminating
+  the need for complex networking configurations.
 
-    * Enhanced Resource Sharing: With VPC Peering, resources in different VPCs can communicate seamlessly, allowing for efficient sharing of
-      data, services, and applications.
+- **Enhanced Resource Sharing:** With VPC Peering, resources in different VPCs can communicate seamlessly, allowing for efficient sharing of
+  data, services, and applications.
 
-    * Increased Security: Communication between peered VPCs remains within the cloud provider's network, ensuring a secure and private
-      connection.
+- **Increased Security:** Communication between peered VPCs remains within the cloud provider's network, ensuring a secure and private
+  connection.
 
-    * Low Latency and High Bandwidth: VPC Peering enables high-performance networking with low latency and high bandwidth, improving
-      application performance.
+- **Low Latency and High Bandwidth:** VPC Peering enables high-performance networking with low latency and high bandwidth, improving
+  application performance.
 
-    * Cost Efficiency: Utilizing VPC Peering eliminates the need for additional networking components, reducing costs associated with data
-      transfer and network infrastructure.
+- **Cost Efficiency:** Utilizing VPC Peering eliminates the need for additional networking components, reducing costs associated with data
+  transfer and network infrastructure.
 
 ## Introduction to VPN Connections
 
@@ -310,29 +310,29 @@ VPN (Virtual Private Network) connections establish a secure and encrypted commu
 
 There are two primary types of VPN connections:
 
-    1. Site-to-Site VPN: Site-to-Site VPN establishes a secure connection between your on-premises network and the cloud provider's network.
-       It allows communication between your on-premises resources and resources in the VPC securely and privately. This type of VPN connection is commonly used in hybrid cloud architectures.
+1. **Site-to-Site VPN:** Site-to-Site VPN establishes a secure connection between your on-premises network and the cloud provider's network.
+   It allows communication between your on-premises resources and resources in the VPC securely and privately. This type of VPN connection is commonly used in hybrid cloud architectures.
 
-    ![alt text](Images/35_s2s_vpn.png)
+   ![alt text](Images/35_s2s_vpn.png)
 
-    2. AWS Client VPN: AWS Client VPN provides secure remote access to the cloud network for individual users or devices. It enables secure
-       connectivity for remote employees, partners or contractors to access resources in the VPC securely.
+2. **AWS Client VPN:** AWS Client VPN provides secure remote access to the cloud network for individual users or devices. It enables secure
+   connectivity for remote employees, partners or contractors to access resources in the VPC securely.
 
-    ![alt text](Images/36_client_vpn.png)
+   ![alt text](Images/36_client_vpn.png)
 
 ## Benefits of VPN Connections
 
-    * Secure Remote Access: VPN connections enable secure access to resources in the cloud network for remote users or devices, ensuring data
-      privacy and protection.
+- **Secure Remote Access:** VPN connections enable secure access to resources in the cloud network for remote users or devices, ensuring data
+  privacy and protection.
 
-    * Data Encryption: VPN connections encrypt the data transmitted between your on-premises network and the cloud network, providing a secure
-      channel for data transfer.
+- **Data Encryption:** VPN connections encrypt the data transmitted between your on-premises network and the cloud network, providing a secure
+  channel for data transfer.
 
-    * Flexibility and Mobility: VPN connections allow authorized users to securely access cloud resources from any location, promoting
-      flexibility and mobility in accessing critical applications and data.
+- **Flexibility and Mobility:** VPN connections allow authorized users to securely access cloud resources from any location, promoting
+  flexibility and mobility in accessing critical applications and data.
 
-    * Hybrid Cloud Connectivity: VPN connections play a vital role in establishing secure and reliable connectivity between your on-premises
-      network and cloud resources, facilitating hybrid cloud architectures and seamless integration.
+- **Hybrid Cloud Connectivity:** VPN connections play a vital role in establishing secure and reliable connectivity between your on-premises
+  network and cloud resources, facilitating hybrid cloud architectures and seamless integration.
 
 ## Summary
 
