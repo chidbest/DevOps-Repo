@@ -26,7 +26,7 @@ We will leverage the power of _Infrastructure-as-code_ to build similar setups.
 
 ![alt text](Images/4_pip_success.png)
 
-**_Note_: I was having error setting up the pip intal command but the solution was solve was gotten via [this website](https://www.squash.io/how-to-fix-pip-not-recognized-as-internal-or-external-command/).**
+**_Note_: I was having error setting up the pip install command but the solution problem was gotten on [this website](https://www.squash.io/how-to-fix-pip-not-recognized-as-internal-or-external-command/).**
 
 ![alt text](Images/3_pip_error.png)
 
@@ -36,7 +36,7 @@ We will leverage the power of _Infrastructure-as-code_ to build similar setups.
 
 6. Create an [s3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) Amazon Simple Storage Service to store terraform state file. My bucket is named `chidi-dev-terraform-bucket`.
 
-**For more infordmation on how to create IAM s3 bucket and grant access, kindly [visit here](https://help.mypurecloud.com/articles/create-iam-resources-for-aws-s3-bucket/).**
+**For more information on how to create IAM s3 bucket and grant access, kindly [visit here](https://help.mypurecloud.com/articles/create-iam-resources-for-aws-s3-bucket/).**
 
 ![alt text](Images/6_aws_bucket.png)
 
